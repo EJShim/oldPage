@@ -82,7 +82,7 @@
 		scene.fog = new THREE.Fog( 'black', 1, 500 );
 
 
-		var background_material = new THREE.MeshBasicMaterial({color:'white', map: THREE.ImageUtils.loadTexture( './images/universe.png' ) });
+		var background_material = new THREE.MeshBasicMaterial({color:'white', map: THREE.ImageUtils.loadTexture( '../images/universe.png' ) });
 		background = new THREE.Mesh(new THREE.SphereGeometry( 1000, 32, 32 ), background_material);
 		background.material.side = THREE.BackSide;
 		scene.add(background);
